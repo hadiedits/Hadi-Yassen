@@ -19,6 +19,7 @@ npm run build
 ```
 npm run lint
 ```
-
+### for web in git sh deploy.sh
+npm run deploy
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
