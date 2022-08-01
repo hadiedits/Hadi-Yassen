@@ -29,8 +29,8 @@
     </div>
     <dir style="color: white; text-align: center">
       <hi
-        >I'm Hadi, Video Editor Here are Some Edits for Esports, Content
-        Creators & Personal Edits
+        >vvv Video Editor Here are Some Edits for Esports, Content Creators &
+        Personal Edits
       </hi>
     </dir>
     <div>
