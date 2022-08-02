@@ -29,7 +29,7 @@
     </div>
     <dir style="color: white; text-align: center">
       <hi
-        >I'm Hadi, Video Editor Here are Some Edits for Esports, Content
+        >I1'm Hadi, Video Editor Here are Some Edits for Esports, Content
         Creators & Personal Edits
       </hi>
     </dir>
@@ -56,7 +56,7 @@
           </a>
         </li>
         <li class="llist">
-          <a href="/Customer-Vdeos">
+          <a href="Customer-Vdeos">
             <span></span>
             <span></span>
             <span></span>
@@ -93,18 +93,29 @@
     </div>
     <div style="position: absolute"></div>
   </div>
+  <li>
+    <router-link to="/3D-Vdeos">DemoThree</router-link>
+  </li>
   <div>
-    <router-view name="34"></router-view>
+    {{ items.item[1].time }}
   </div>
-  {{ myJson.item[1].time }}
 </template>
-
 <script>
-  import json from "../../../Customer-Vdeos.json";
+  import axios from "axios";
   export default {
+    async created() {
+      try {
+        const res = await axios.get(
+          `https://hadiedits.github.io/data/Customer-Vdeos.json`
+        );
+        this.items = res.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
     data() {
       return {
-        myJson: json,
+        items: [],
       };
     },
   };

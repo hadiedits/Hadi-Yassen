@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "@//views/HomeView.vue";
-import _3DVdeos from "@//views/3D-Vdeos.vue";
-import CustomerVdeos from "@//views/Customer-Vdeos.vue";
-import PrivateVideos from "@//views/Private-Videos.vue";
+import HomeView from "@/views/HomeView.vue";
+import _3DVdeos from "@/views/3D-Vdeos.vue";
+import CustomerVdeos from "@/views/Customer-Vdeos.vue";
+import PrivateVideos from "@/views/Private-Videos.vue";
 
 const routes = [
   {
@@ -17,7 +17,7 @@ const routes = [
   },
   {
     path: "/Customer-Vdeos",
-    name: "/Customer-Vdeos",
+    name: "Customer-Vdeos",
     component: CustomerVdeos,
   },
   {
