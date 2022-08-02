@@ -1,4 +1,3 @@
-
 module.exports = {
-  publicPath: '/Hadi-Yassen/'
+  publicPath: "/Hadi-Yassen/",
 };

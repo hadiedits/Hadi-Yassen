@@ -56,7 +56,7 @@
           </a>
         </li>
         <li class="llist">
-          <a href="Customer-Vdeos">
+          <a href="/Customer-Vdeos">
             <span></span>
             <span></span>
             <span></span>
@@ -96,9 +96,19 @@
   <div>
     <router-view name="34"></router-view>
   </div>
+  {{ myJson.item[1].time }}
 </template>
 
-<script></script>
+<script>
+  import json from "../../../Customer-Vdeos.json";
+  export default {
+    data() {
+      return {
+        myJson: json,
+      };
+    },
+  };
+</script>
 
 <style scoped>
   @import "../css/Background\ .css";
