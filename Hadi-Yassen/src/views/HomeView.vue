@@ -13,6 +13,7 @@
       <li></li>
       <li></li>
     </ul>
+
     <!-- APP -->
 
     <div
@@ -29,7 +30,7 @@
     </div>
     <dir style="color: white; text-align: center">
       <hi
-        >I1'm Hadi, Video Editor Here are Some Edits for Esports, Content
+        >I'm Hadi, Video Editor Here are Some Edits for Esports, Content
         Creators & Personal Edits
       </hi>
     </dir>
@@ -47,7 +48,7 @@
           </a>
         </li>
         <li class="llist">
-          <a href="3D-Vdeos">
+          <a href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -56,7 +57,7 @@
           </a>
         </li>
         <li class="llist">
-          <a href="Customer-Vdeos">
+          <a href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -65,7 +66,7 @@
           </a>
         </li>
         <li class="llist">
-          <a href="Private-Videos">
+          <a href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -87,46 +88,12 @@
         </li>
       </ul>
     </div>
-
-    <div>
-      <ul style="color: white; text-align: center"></ul>
-    </div>
-    <div style="position: absolute"></div>
-  </div>
-  <li>
-    <router-link to="/3D-Vdeos">DemoThree</router-link>
-  </li>
-  <div>
-    {{ items.item[1].time }}
   </div>
 </template>
-<script>
-  import axios from "axios";
-  export default {
-    async created() {
-      try {
-        const res = await axios.get(
-          `https://hadiedits.github.io/data/Customer-Vdeos.json`
-        );
-        this.items = res.data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-    data() {
-      return {
-        items: [],
-      };
-    },
-  };
-</script>
 
-<style scoped>
+<script></script>
+
+<style>
   @import "../css/Background\ .css";
   @import "../css/3d.css";
-  @import "../css/bu.css";
-
-  .title {
-    color: white;
-  }
 </style>
